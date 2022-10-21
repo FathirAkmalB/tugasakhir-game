@@ -53,14 +53,14 @@ if(isset($_SESSION["id"])){
                         placeholder="Username" onkeyup="keynameLog()">
                     <br>
 
-                    <p id="hasil-1" class="mr-8 text-sm text-red-400"></p>
+                    <p id="err-1" class="mr-8 text-sm text-red-400"></p>
 
                     <input type="password" id="password2" value=""
                         class="rounded-sm bg-transparent text-white w-60 h-8 py-4 px-8 mt-8 text-right outline-none text-base matio"
                         placeholder="Password" onkeyup="keypassLog()">
                     <br>
 
-                    <p id="hasil-2" class="mr-8 text-sm text-red-400"></p>
+                    <p id="err-2" class="mr-8 text-sm text-red-400"></p>
 
                     <button type="button"
                         class="mt-8 bg-re-blue rounded w-32 h-9 ml-0 mr-7 text-lg text-white font-semibold btn hover:bg-re-tir"
@@ -89,19 +89,20 @@ if(isset($_SESSION["id"])){
                     placeholder="Full Name" onkeyup="keynameReg()">
                 <br>
 
-                <p id="hasil-1" class="mr-8 text-sm text-red-400"></p>
+                <p id="err-3" class="mr-8 text-sm text-red-400"></p>
 
                 <input type="password" id="password" value=""
                     class="rounded-sm bg-transparent text-white w-60 h-8 py-4 px-8 mt-8 text-right outline-none text-base matio"
                     placeholder="Password" onkeyup="keypassReg()">
                 <br>
+                <p id="err-4" class="mr-8 text-sm text-red-400"></p>
 
                 <input type="text" id="username" value=""
                     class="rounded-sm bg-transparent text-white w-60 h-8 py-4 px-8 mt-8 text-right outline-none text-base matio"
                     placeholder="Username" onkeyup="keymailReg()">
                 <br>
 
-                <p id="hasil-2" class="mr-8 text-sm text-red-400"></p>
+                <p id="err-5" class="mr-8 text-sm text-red-400"></p>
 
                 <button type="button"
                     class="mt-8 bg-re-blue rounded w-32 h-9 ml-0 mr-7 text-lg text-white font-semibold btn hover:bg-re-tir"
@@ -117,6 +118,7 @@ if(isset($_SESSION["id"])){
     </footer>
     <script src="asset/switch.js"></script>
     <script src="asset/script.js"></script>
+    <script src="asset/key.js"></script>
         <?php require 'koneksi.php'; ?>
   </body>
 </html>
