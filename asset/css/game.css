@@ -1,0 +1,104 @@
+*{
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        text-decoration: none;
+
+    }
+    body{
+        background-color: #1E293B;
+        overflow: hidden;
+    }
+    .container{
+        /* filter: blur(5px); */
+        background-color:#685F7F;
+        border-radius: 14px;
+        width: 70%;
+        height: 50vh;
+        margin: 90px auto 80px auto;
+    }
+    h1{
+        text-align: center;
+    }
+    .tirek{
+        margin-top: 10px;
+    }
+    .card1{
+        margin-left: 50px;
+        margin-top: 10px;
+    }
+    .warna{
+        display: flex;
+        margin-top: 0px;
+        font-size: 26px;
+    }
+    input{
+        margin-left: 20px;
+        width: 70px;
+        height: 30px;
+    }
+    .player{
+        font-size: 30px;
+    }
+    .btn-card{
+        margin-top: 120px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 90px 0 90px;
+    }
+    .mulai{
+        background-color: #1E293B;
+        padding:  13px 25px 13px 25px;
+        border-radius: 7px;
+        color: white;
+        letter-spacing: 2px;
+        font-weight: bold;
+    }
+    .log{
+        background-color: #1E293B;
+        padding:  13px 25px 13px 25px;
+        border-radius: 7px;
+        color: white;
+        letter-spacing: 2px;
+        font-weight: bold;
+    }
+    footer{
+        position: relative;
+        margin-top: 70px;
+        border: none;
+        border-top: 1px solid white;
+        padding: 45px;
+        color: white;
+        font-size: 12px;
+    }
+    span{
+        color: #dda0dd ;
+    }
+    .btn-game{
+        display: flex;
+        position: absolute;
+        margin-left: 500px;
+    }
+    .ulang{
+        margin-right: 120px;
+        background-color: #1E293B;
+        padding:  13px 25px 13px 25px;
+        border-radius: 7px;
+        color: white;
+        font-weight: bold;
+        border: 1px solid red;
+    }
+    .kembali{
+        background-color: #1E293B;
+        padding:  13px 25px 13px 25px;
+        border-radius: 7px;
+        color: white;
+        letter-spacing: 2px;
+        font-weight: bold;
+    }
+    .usn-game{
+        font-size: 28px;
+        position: absolute;
+        margin-left: 60px;
+        margin-top: 12px;
+    }

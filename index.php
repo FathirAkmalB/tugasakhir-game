@@ -15,9 +15,9 @@ if (isset($_SESSION["id"])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-<link rel="stylesheet" href="asset/game.css">
+<link rel="stylesheet" href="asset/css/game.css">
 </head>
+
 <body>
     <div class="container" id="loby">
         <div class="nama-game">
@@ -25,7 +25,7 @@ if (isset($_SESSION["id"])) {
         </div>
 
         <div class="card1">
-        <p class="player">PLAYER : <?php echo $user["fullname"]; ?> # <?php echo $user["id"]; ?></p>
+        <p class="player"  id="text">PLAYER : <?php echo $user["fullname"]; ?> # <?php echo $user["id"]; ?></p>
             <div class="warna"><p class="t-warna">Choose Color :</p><input id="color" type="color" style="background-color: transparent; border: none;"></div>
         </div>
         <div class="btn-card"><a href="logout.php" class="log">LOGOUT</a><button onclick="mulai()" class="mulai" style="border: none;">START</button></div>
@@ -43,6 +43,10 @@ if (isset($_SESSION["id"])) {
         <footer>
             <h1>Developed By <span>Fathir Akmal</span></h1>
         </footer>
-    <script src="asset/game.js"></script>
+
+
+    <script src="asset/javascript/game.js"></script>
 </body>
+
+
 </html>

@@ -25,46 +25,49 @@ if(isset($_SESSION["id"])){
         }
     </script>
     <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="asset/style.css">
+    <link rel="stylesheet" href="asset/css/style.css">
     <title>Login</title>
 </head>
-
 <body class="bg-slate-800">
-<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <img src="bg 1.png" alt="background-image" class="h-2/3 w-1/3 float-right mr-20 mt-24">
-    <img src="Ellipse 1.png" alt="" class="  img  mr-20 mt-0 absolute">
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+            <img src="asset/img/bg 1.png" alt="background-image" class="h-2/3 w-1/3 float-right mr-20 mt-24">
+            <img src="asset/img/Ellipse 1.png" alt="" class="  img  mr-20 mt-0 absolute">
 
     
     <div id="main1">
 
-        <div
-            class="w-2/4 h-96 mt-44 bg-transparent border-solid border-2 border-b-transparent border-r-white border-t-transparent border-l-transparent ">
-            <main autocomplete="off" action="" method="post" class="mt-10">
-                <h2 class="text-right text-white text-3xl mr-9 -mb-3 log p-1 font-bold">Log <span
+        <div 
+        class="w-2/4 h-96 mt-44 bg-transparent border-solid border-2 border-b-transparent border-r-white border-t-transparent border-l-transparent ">
+            <main 
+            class="mt-10" autocomplete="off" action="" method="post" >
+                <h2 
+                class="text-right text-white text-3xl mr-9 -mb-3 log p-1 font-bold">Log 
+                    <span
                         class="text-re-blue font-bold">In</span></h2> <br>
-                <div class="w-56 ml-3 bg-dakr opacity-95 rounded"></div>
+                <div 
+                class="w-56 ml-3 bg-dakr opacity-95 rounded"></div>
 
-                <div class="text-sm text-right mr-2 ">
+                <div 
+                class="text-sm text-right mr-2 ">
 
-                    <input type="hidden" id="action2" value="login" class="">
+                    <input type="hidden" id="action2" value="login">
 
                     <input type="text" id="username2" value=""
-                        class="rounded-sm bg-transparent text-white w-60 h-8 py-4 px-8 mt-8 text-right outline-none text-base ani"
-                        placeholder="Username" onkeyup="keynameLog()">
+                        class="rounded-sm bg-transparent text-white w-60 h-8 py-4 px-8 mt-8 text-right outline-none text-base ani" placeholder="Username" onkeyup="keynameLog()">
                     <br>
 
-                    <p id="err-1" class="mr-8 text-sm text-red-400"></p>
+                    <p id="err-1" 
+                    class="mr-8 text-sm text-red-400"></p>
 
                     <input type="password" id="password2" value=""
-                        class="rounded-sm bg-transparent text-white w-60 h-8 py-4 px-8 mt-8 text-right outline-none text-base matio"
-                        placeholder="Password" onkeyup="keypassLog()">
+                        class="rounded-sm bg-transparent text-white w-60 h-8 py-4 px-8 mt-8 text-right outline-none text-base matio" placeholder="Password" onkeyup="keypassLog()">
                     <br>
 
-                    <p id="err-2" class="mr-8 text-sm text-red-400"></p>
+                    <p id="err-2" 
+                        class="mr-8 text-sm text-red-400"></p>
 
                     <button type="button"
-                        class="mt-8 bg-re-blue rounded w-32 h-9 ml-0 mr-7 text-lg text-white font-semibold btn hover:bg-re-tir"
-                        onclick="submitDataLog()">Log in</button>
+                        class="mt-8 bg-re-blue rounded w-32 h-9 ml-0 mr-7 text-lg text-white font-semibold btn hover:bg-re-tir" onclick="submitDataLog()">Log in</button>
                     <br> <br>
                     <p><a class="text-white text-xs btn mr-7 " onclick="reg()">Already Have Account? <span
                                 class="text-re-blue btn">Regist Here</span></a></p>
@@ -73,52 +76,74 @@ if(isset($_SESSION["id"])){
         </div>
     </div>
     
-    <div id="main2" style="display: none;"
+    <!-- box 2 -->
+    <div id="main2"
         class="w-2/4 h-96 mt-44 bg-transparent border-solid border-2 border-b-transparent border-r-white border-t-transparent border-l-transparent">
         <main autocomplete="off" action="" method="post" class="mt-10">
-            <h2 class="text-right text-white text-3xl mr-9 -mb-8 log p-1 font-bold">Sign <span
-                    class="text-re-blue font-bold">Up</span></h2> <br>
-            <div class="w-56 ml-3 bg-dakr opacity-95 rounded"></div>
+            
+        <!-- title -->
+            <h2 
+                class="text-right text-white text-3xl mr-9 -mb-8 log p-1 font-bold">Sign 
+                <span
+                    class="text-re-blue font-bold">Up</span></h2> 
+                    
+                    <br>
 
-            <div class="text-sm text-right mr-2 ">
+                <!-- wrapper style -->
+            <div 
+            class="w-56 ml-3 bg-dakr opacity-95 rounded"></div>
 
-                <input type="hidden" id="action" value="register" class="">
+                <!-- wrapper -->
+            <div 
+            class="text-sm text-right mr-2 ">
 
+                    <!-- id identify -->
+                <input type="hidden" id="action" value="register">
+
+                    <!-- input fullname -->
                 <input type="text" id="name" value=""
-                    class="rounded-sm bg-transparent text-white w-60 h-8 py-4 px-8 mt-8 text-right outline-none text-base ani"
-                    placeholder="Full Name" onkeyup="keynameReg()">
+                    class="rounded-sm bg-transparent text-white w-60 h-8 py-4 px-8 mt-8 text-right outline-none text-base ani" placeholder="Full Name" onkeyup="keynameReg()">
                 <br>
+                    <!-- error notif 3 -->
+                <p class="mr-8 text-sm text-red-400" id="err-3"></p>
 
-                <p id="err-3" class="mr-8 text-sm text-red-400"></p>
-
+                    <!-- input password -->
                 <input type="password" id="password" value=""
-                    class="rounded-sm bg-transparent text-white w-60 h-8 py-4 px-8 mt-8 text-right outline-none text-base matio"
-                    placeholder="Password" onkeyup="keypassReg()">
-                <br>
-                <p id="err-4" class="mr-8 text-sm text-red-400"></p>
+                    class="rounded-sm bg-transparent text-white w-60 h-8 py-4 px-8 mt-8 text-right outline-none text-base matio" placeholder="Password" onkeyup="keypassReg()">
+                
+                    <br>
+                     <!-- error notif 4 -->               
+                    <p  class="mr-8 text-sm text-red-400" id="err-4"></p>
 
+                    <!-- input username -->
                 <input type="text" id="username" value=""
-                    class="rounded-sm bg-transparent text-white w-60 h-8 py-4 px-8 mt-8 text-right outline-none text-base matio"
-                    placeholder="Username" onkeyup="keymailReg()">
-                <br>
+                    class="rounded-sm bg-transparent text-white w-60 h-8 py-4 px-8 mt-8 text-right outline-none text-base matio" placeholder="Username" onkeyup="keymailReg()">
+                
+                    <br>
 
+                    <!-- error notif 5 -->
                 <p id="err-5" class="mr-8 text-sm text-red-400"></p>
 
+                <!-- submit regist -->
                 <button type="button"
-                    class="mt-8 bg-re-blue rounded w-32 h-9 ml-0 mr-7 text-lg text-white font-semibold btn hover:bg-re-tir"
-                    onclick="submitData()">Regist</button>
-                <br> <br>
+                    class="mt-8 bg-re-blue rounded w-32 h-9 ml-0 mr-7 text-lg text-white font-semibold btn hover:bg-re-tir" onclick="submitData()">Regist</button>
+                
+                    <br> 
+                    <br>
+                <!-- Login Access -->
                 <p><a class="text-white text-xs btn mr-7 " onclick="log()">Not Have Account? <span
-                            class="text-re-blue btn">Login Here</span></a></p>
+                        class="text-re-blue btn">Login Here</span></a></p>
             </div>
         </main>
     </div>
-    <footer>
-        <p class="absolute font-sans text-re-tir text-sm font-thin footer" >Developed By <span class="text-white">Fathir Akmal B</span></p>
-    </footer>
-    <script src="asset/switch.js"></script>
-    <script src="asset/script.js"></script>
-    <script src="asset/key.js"></script>
-        <?php require 'koneksi.php'; ?>
+        <!-- footer -->
+            <footer>
+                <p class="absolute font-sans text-re-tir text-sm font-thin footer" >Developed By <span class="text-white">Fathir Akmal B</span></p>
+            </footer>
+
+    <!-- connection -->
+    <script src="asset/javascript/switch.js"></script>
+    <script src="asset/javascript/script.js"></script>
+    <?php require 'koneksi.php'; ?>
   </body>
 </html>
